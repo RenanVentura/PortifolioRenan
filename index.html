@@ -1,167 +1,206 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Portifolio Renan Ventura</title>
+    <title>Portfólio Renan Ventura</title>
   </head>
   <body>
     <!-- Cabeçalho -->
-    <div class="container-cabecalho">
-      <ul class="lista-cabecalho">
-        <li><a href="#sobre">Sobre mim</a></li>
-        <li><a href="#formacoes">Formações</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contatos">Contatos</a></li>
-      </ul>
-    </div>
-    <!-- Conteúdo principal -->
-    <section id="sobre" class="secaoSobreMim">
-      <h1>Sobre mim</h1>
-      <div class="secaoSobre">
-        <p class="textoSobre">
-          &emsp;Meu nome é Renan Ventura, comecei minha carreira profissional na QuallyGrama em novembro de 2022, 
-          onde atualmente atuo como Analista de TI JR. Durante essa trajetória, adquiri experiência em diversas linguagens de programação, 
-          como React.js, JavaScript, Python, SQL/PL e VBScript. Também trabalhei com bancos de dados Oracle, NeonTech, MongoDB e desenvolvi painéis no 
-          Power BI, utilizando funções DAX para cálculos.
-        <br><br>&emsp;Sou formado em Técnico em Mecatrônica pelo Senai Gaspar Ricardo Junior e Tecnólogo em Automação Industrial pela Fatec Tatuí – 
-          Prof. Wilson Roberto Ribeiro de Camargo, onde tive meu Trabalho de Conclusão de Curso (TCC) publicado.
-<a class="linkTCC" href="https://sif.fatecitapetininga.edu.br/perspectiva/pdf/27/e27artigo%20(4).pdf" target="_blank" rel="noopener noreferrer">Veja meu TCC aqui</a>.
-
-Sou dedicado e comprometido com meu aprendizado constante. Minha paixão pela tecnologia me motiva a buscar sempre novos desafios e evoluir profissionalmente.
+    <header class="container-cabecalho">
+      <nav>
+        <ul class="lista-cabecalho">
+          <li><a href="#sobre">Sobre mim</a></li>
+          <li><a href="#formacoes">Formações</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contatos">Contatos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Sobre mim -->
+      <section id="sobre" class="secaoSobreMim">
+        <h1>Sobre mim</h1>
+        <div class="secaoSobre">
+          <p class="textoSobre">
+            &emsp;Meu nome é Renan Ventura, comecei minha carreira profissional
+            na QuallyGrama em novembro de 2022, onde atualmente atuo como
+            Analista de TI JR. Durante essa trajetória, adquiri experiência em
+            diversas linguagens de programação, como React.js, JavaScript,
+            Python, SQL/PL e VBScript. Também trabalhei com bancos de dados
+            Oracle, NeonTech, MongoDB e desenvolvi painéis no Power BI,
+            utilizando funções DAX para cálculos.
+            <br /><br />&emsp;Sou formado em Técnico em Mecatrônica pelo Senai
+            Gaspar Ricardo Junior e Tecnólogo em Automação Industrial pela Fatec
+            Tatuí – Prof. Wilson Roberto Ribeiro de Camargo, onde tive meu
+            Trabalho de Conclusão de Curso (TCC) publicado.
+            <a
+              class="linkTCC"
+              href="https://sif.fatecitapetininga.edu.br/perspectiva/pdf/27/e27artigo%20(4).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Veja meu TCC aqui</a
+            >. <br /><br />
+            Sou dedicado e comprometido com meu aprendizado constante. Minha
+            paixão pela tecnologia me motiva a buscar sempre novos desafios e
+            evoluir profissionalmente.
+          </p>
+          <div>
+            <img
+              class="fotoPerfil"
+              src="./assets/Foto_Perfil.png"
+              alt="Foto Perfil"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- Formações -->
+      <section id="formacoes" class="secao">
+        <h1>Formações</h1>
+        <div class="formacao-baloes">
+          <div class="formacao-balao">
+            <div class="formacao-curso">
+              Análise e Desenvolvimento de Software
+            </div>
+            <div class="formacao-inst">
+              UNINTER Centro Universitário Internacional
+            </div>
+            <div class="formacao-data">Previsão de conclusão: Jul/2027</div>
+          </div>
+          <hr class="formacao-linha" />
+          <div class="formacao-balao">
+            <div class="formacao-curso">Automação Industrial</div>
+            <div class="formacao-inst">
+              Fatec Tatuí - Prof. Wilson Roberto Ribeiro de Camargo
+            </div>
+            <div class="formacao-data">Concluído: Dez/2024</div>
+          </div>
+          <hr class="formacao-linha" />
+          <div class="formacao-balao">
+            <div class="formacao-curso">Técnico em Mecatrônica</div>
+            <div class="formacao-inst">Senai Gaspar Ricardo Junior</div>
+            <div class="formacao-data">Concluído: Dez/2022</div>
+          </div>
+        </div>
+        <!-- Cursos Complementares-->
+        <div class="container-curso">
+          <hr class="formacao-linha-curso" />
+          <h2>Cursos</h2>
+          <div class="formacao-baloes">
+            <div class="formacao-balao">
+              <div class="formacao-curso">Linguagem JavaScript</div>
+              <div class="formacao-inst">CodeHouse Brasil</div>
+            </div>
+            <hr class="formacao-linha" />
+            <div class="formacao-balao">
+              <div class="formacao-curso">Linguagem Python</div>
+              <div class="formacao-inst">Udemy</div>
+            </div>
+            <hr class="formacao-linha" />
+            <div class="formacao-balao">
+              <div class="formacao-curso">Banco de Dados SQL</div>
+              <div class="formacao-inst">Udemy</div>
+            </div>
+            <hr class="formacao-linha" />
+            <div class="formacao-balao">
+              <div class="formacao-curso">Macros e VBA no Excel</div>
+              <div class="formacao-inst">Udemy</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Projetos -->
+      <section id="projetos" class="secao">
+        <h1>Projetos</h1>
+        <p>
+          Veja alguns dos meus projetos desenvolvidos durante minha trajetória
+          acadêmica e profissional.
         </p>
-        <div>
-          <img
-            class="fotoPerfil"
-            src="./assets/Foto_Perfil.png"
-            alt="Foto Perfil"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMAÇÕES -->
-    <section id="formacoes" class="secao">
-      <h1>Formações</h1>
-      <div class="formacao-baloes">
-        <div class="formacao-balao">
-          <div class="formacao-curso">
-            Análise e Desenvolvimento de Software
+        <div class="projetos-baloes">
+          <div class="projeto-balao">
+            <img
+              class="projeto-img"
+              src="./assets/LogoEmpresa.png"
+              alt="Projeto 1"
+            />
+            <div class="projeto-info">
+              <h2 class="projeto-titulo">Sistema de Ordem de Serviço</h2>
+              <p class="projeto-desc">
+                Site desenvolvido para otimizar processo interno da empresa
+                QuallyGrama, foi utilizado React.js, NodeJS, JavaScript e
+                TailWind
+              </p>
+              <div class="projeto-botoes">
+                <a
+                  class="projeto-link"
+                  href="https://github.com/RenanVentura/FrontEndOs/tree/main"
+                  target="_blank"
+                  >Ver no GitHub - FrontEnd</a
+                >
+                <a
+                  class="projeto-link"
+                  href="https://github.com/RenanVentura/BackEndOS/tree/main"
+                  target="_blank"
+                  >Ver no GitHub - BackEnd</a
+                >
+              </div>
+            </div>
           </div>
-          <div class="formacao-inst">
-            UNINTER Centro Universitário Internacional
-          </div>
-          <div class="formacao-data">Previsão de conclusão: Jul/2027</div>
-        </div>
-        <hr class="formacao-linha" />
-        <div class="formacao-balao">
-          <div class="formacao-curso">Automação Industrial</div>
-          <div class="formacao-inst">
-            Fatec Tatuí - Prof. Wilson Roberto Ribeiro de Camargo
-          </div>
-          <div class="formacao-data">Concluído: Dez/2024</div>
-        </div>
-        <hr class="formacao-linha" />
-        <div class="formacao-balao">
-          <div class="formacao-curso">Técnico em Mecatrônica</div>
-          <div class="formacao-inst">Senai Gaspar Ricardo Junior</div>
-          <div class="formacao-data">Concluído: Dez/2022</div>
-        </div>
-      </div>
-
-      <!-- Cursos Complementares-->
-      <div class="container-curso">
-        <hr class="formacao-linha-curso" />
-        <h1>Cursos</h1>
-        <div class="formacao-baloes">
-          <div class="formacao-balao">
-            <div class="formacao-curso">Linguagem JavaScript</div>
-            <div class="formacao-inst">CodeHouse Brasil</div>
-          </div>
-          <hr class="formacao-linha" />
-
-          <div class="formacao-baloes">
-          <div class="formacao-balao">
-            <div class="formacao-curso">Linguagem Python</div>
-            <div class="formacao-inst">Udemy</div>
-          </div>
-          <hr class="formacao-linha" />
-
-        <div class="formacao-baloes">
-          <div class="formacao-balao">
-            <div class="formacao-curso">Banco de Dados SQL</div>
-            <div class="formacao-inst">Udemy</div>
-          </div>
-          <hr class="formacao-linha" />
-
-          <div class="formacao-baloes">
-          <div class="formacao-balao">
-            <div class="formacao-curso">Macros e VBA no Excel</div>
-            <div class="formacao-inst">Udemy</div>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-
-    <!-- Projetos -->
-    <section id="projetos" class="secao">
-      <h1>Projetos</h1>
-      <p>
-        Veja alguns dos meus projetos desenvolvidos durante minha trajetória
-        acadêmica e profissional.
-      </p>
-      <div class="projetos-baloes">
-        <div class="projeto-balao">
-          <img class="projeto-img" src="./assets/LogoEmpresa.png" alt="Projeto 1">
-          <div class="projeto-info">
-            <h2 class="projeto-titulo">Sistema de Ordem de Serviço</h2>
-            <p class="projeto-desc">Site desenvolvido para otimizar processo interno da empresa QuallyGrama, foi utilizado React.js, NodeJS, JavaScript e TailWind</p>
-            <div class="projeto-botoes">
-              <a class="projeto-link" href="https://github.com/RenanVentura/FrontEndOs/tree/main" target="_blank">Ver no GitHub - FrontEnd</a>
-              <a class="projeto-link" href="https://github.com/RenanVentura/BackEndOS/tree/main" target="_blank">Ver no GitHub - BackEnd</a>
-
+          <div class="projeto-balao">
+            <img
+              class="projeto-img"
+              src="./assets/LogoCoder.png"
+              alt="Projeto 2"
+            />
+            <div class="projeto-info">
+              <h2 class="projeto-titulo">Calculadora de Juros Compostos</h2>
+              <p class="projeto-desc">
+                Site desenvolvido para Trabalho Final do curso de JavaScript na
+                CoderHouse. Foi utilizado JavaScript (Vanilla) e API do Banco
+                Central para cotação do Dolar
+              </p>
+              <div class="projeto-botoes">
+                <a
+                  class="projeto-link"
+                  href="https://github.com/RenanVentura/CoderHouseVentura/tree/main"
+                  target="_blank"
+                  >Ver no GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
-        <div class="projeto-balao">
-          <img class="projeto-img" src="./assets/LogoCoder.png" alt="Projeto 2">
-          <div class="projeto-info">
-            <h2 class="projeto-titulo">Calculadora de Juros Compostos</h2>
-            <p class="projeto-desc">Site desenvolvido para Trabalho Final do curso de JavaScript na CoderHouse. Foi utilizado JavaScript (Vanilla) e API do Banco Central para cotação do Dolar</p>
-            <div class="projeto-botoes">
-              <a class="projeto-link" href="https://github.com/RenanVentura/CoderHouseVentura/tree/main" target="_blank">Ver no GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contatos -->
-    <section id="contatos" class="secao">
-      <h1>Contatos</h1>
-      <p class="linkEmail"> <img class="icone" src="./assets/IconeEmail.png" alt="E-mail"> renan.al.ventura@gmail.com</p>
-      <p><img class="icone" src="./assets/IconeFone.png" alt="Telefone"> (15) 99771-8472</p>
-            <p>
-        <img
-          class="icone"
-          src="./assets/LogoGit.png"
-          alt="Foto Perfil">
-        <a class="linkGit" href="https://www.linkedin.com/in/renanalventura/" target="_blank"
-          >Renan Ventura</a
-        >
-      </p>
-      <p>
-        <img
-          class="icone"
-          src="./assets/LogoLinkedin.png"
-          alt="Foto Perfil">
-        <a class="linkPerfil" href="https://www.linkedin.com/in/renanalventura/" target="_blank"
-          >Renan Ventura</a
-        >
-      </p>
-    </section>
+      </section>
+      <!-- Contatos -->
+      <section id="contatos" class="secao">
+        <h1>Contatos</h1>
+        <p class="linkEmail">
+          <img class="icone" src="./assets/IconeEmail.png" alt="E-mail" />
+          renan.al.ventura@gmail.com
+        </p>
+        <p>
+          <img class="icone" src="./assets/IconeFone.png" alt="Telefone" /> (15)
+          99771-8472
+        </p>
+        <p>
+          <img class="icone" src="./assets/LogoGit.png" alt="GitHub" /><a
+            class="linkGit"
+            href="https://www.linkedin.com/in/renanalventura/"
+            target="_blank"
+            >Renan Ventura</a
+          >
+        </p>
+        <p>
+          <img class="icone" src="./assets/LogoLinkedin.png" alt="LinkedIn" /><a
+            class="linkPerfil"
+            href="https://www.linkedin.com/in/renanalventura/"
+            target="_blank"
+            >Renan Ventura</a
+          >
+        </p>
+      </section>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>
