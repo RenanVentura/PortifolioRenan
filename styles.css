@@ -1,0 +1,261 @@
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f6fa;
+  color: #222;
+}
+
+.container-cabecalho {
+  background: #222;
+  padding: 0.5rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.lista-cabecalho {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-cabecalho li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.lista-cabecalho li a:hover {
+  color: #797d80;
+}
+
+.secaoSobre {
+  display: flex;
+  flex-direction: row;
+}
+
+.textoSobre {
+  padding: 1.5rem;
+}
+
+.linkTCC {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.secaoSobreMim {
+  max-width: 1200px;
+  margin: 5rem auto 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.secao {
+  max-width: 1200px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 2rem;
+  font-size: 17px;
+  text-align: justify;
+}
+
+.fotoPerfil {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.secao h1 {
+  margin-top: 0;
+  color: #1a1919;
+}
+
+.formacao-baloes {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formacao-balao {
+  background: #eaf6ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  padding: 1.2rem 1.5rem;
+  width: 950px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.formacao-curso {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #0077b6;
+}
+
+.formacao-inst {
+  font-size: 1rem;
+  color: #222;
+  margin-top: 0.1rem;
+}
+
+.formacao-data {
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 0.3rem;
+}
+
+.formacao-linha {
+  border: none;
+  border-top: 2px solid #b5d6ea;
+  margin: 0.3rem auto;
+  width: 90%;
+}
+
+.container-curso {
+  margin-top: 3rem;
+}
+
+.formacao-linha-curso {
+  border: none;
+  border-top: 2px solid #000000;
+  margin: 1.2rem auto;
+  width: 100%;
+}
+
+.icone {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.projetos-baloes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.projeto-balao {
+  background: #f0f8ff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  padding: 1.5rem 1.2rem;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.projeto-balao:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+.projeto-img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.projeto-info {
+  text-align: center;
+}
+
+.projeto-titulo {
+  font-size: 1.2rem;
+  color: #0077b6;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.projeto-desc {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 0.8rem;
+}
+
+.projeto-link {
+  color: #fff;
+  background: #0077b6;
+  padding: 0.4rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.projeto-botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.projeto-link:hover {
+  background: #00aaff;
+}
+
+.linkPerfil {
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkGit {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  .formacao-balao {
+    width: 90%;
+  }
+  .fotoPerfil {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  .secao {
+    padding: 1rem;
+  }
+  .formacao-balao {
+    width: 100%;
+    padding: 1rem;
+  }
+  .fotoPerfil {
+    width: 120px;
+    height: 120px;
+  }
+  .secaoSobre {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.linkEmail {
+  cursor: pointer;
+}
